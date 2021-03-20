@@ -1,0 +1,182 @@
+ /*This is the root color scheme for the page */
+:root {
+  --green: #687864;
+  --dark-blue: #31708e;
+  --medium-blue: #5085a5;
+  --light-blue: #8fc1e3; 
+  --white: #f7f9fb;
+}
+
+/* Universal CSS properties */
+* {
+margin: 0px;
+padding: 0px;
+}
+
+/* Body CSS properties */
+body {
+display: relative;
+background-size: cover;
+background-position: center;
+background-color: var(--green);
+width: 90%;
+margin: 0 auto;
+}
+
+/* Header box CSS properties */
+.header {
+  padding: 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--green);
+  color: var(--white);
+  height: 80px;
+}
+
+/* h1 "name" CSS properites in header box */ 
+.header h1 {
+  display: inline-block;
+  text-align: right;
+  font-size: 48px;
+  background-color: var(--white);
+  color: var(--green);
+  width: 380px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  }
+
+  /* Nav bar CSS properties in header box */
+.header nav {
+  padding-top: 30px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+/* Links in Nav bar CSS properties */
+a {
+  color: var(--white);
+  text-decoration: underline;
+  margin: auto;
+}
+
+/* Background image CSS properties */
+.hero {
+  height: 220px;
+  width: 100%;
+  background-image: url("../images/trees\ background.JPG");
+  background-size: cover;
+  background-position: center;
+}
+/* Main content CSS properties */
+.content {
+  width: 100%;
+  display: inline-block;
+  overflow: auto;
+  justify-content: center;
+}
+
+/* "About me" section CSS properties */
+.about-me {
+  margin-bottom: 20px;
+  padding: 10px;
+  height: 370px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-size: 16px;
+  background-image: linear-gradient(
+    180deg
+    , #31708e, #687864);
+}
+
+/* Current photo CSS properties in "About me" section */
+.current-photo {
+  float: left;
+  margin-right: 20px;
+  width: 240px;
+  height: 360px;
+  border-right-style: inset;
+  border-bottom-style: inset;
+  border-color: var(--light-blue);
+}
+
+/* My work text-box section CSS properties */
+.my-work {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffffff;
+  font-size:30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Haz materials survey app CSS properties */
+.haz-mat-card {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  height: 250px;
+  color: var(--white);
+  background-image: url("./assets/images/haz-mat-card-photo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Mold inspection report generator CSS properties */
+.microbial-card {
+  color:black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  background-image: url("./assets/images/mold-card-photo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* XRF analyzer digital scribe log CSS properties */
+.xrf-card {
+  color:black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  background-image: url("./assets/images/xrf-card-photo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Cloud based storage app CSS properties */
+.cloud-card {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  background-image: url("./assets/images/cloud-card-photo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+/* Contact section CSS properties */
+.contact-me {
+  padding: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  
+}
+
+.contact-me a {
+  color: var(--green);
+  display: inline-block;
+}
+
