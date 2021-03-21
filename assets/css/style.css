@@ -7,32 +7,52 @@
   --white: #f7f9fb;
 }
 
-/* Universal CSS properties */
+/* Universal CSS properties-affects all elements on page */
 * {
 margin: 0px;
 padding: 0px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Body CSS properties */
+/* h2 tag CSS properties-affects "about me" and "my work and applications" text */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* h3 tag CSS properties-affects 'haz-mat' title card text */
+h3 {
+  font-size:20px;
+  font-weight: bold;
+  background-color: var(--dark-blue);
+  width: fit-content;
+  padding: 5px;
+}
+
+/* h4 tag CSS properties-affects title text in rowed project cards */
+h4 {
+  font-size:15px;
+  font-weight: bold;
+  background-color: var(--dark-blue);
+  width: fit-content;
+  padding: 5px;
+}
+
+/* Body CSS properties-sets background to green and fills the entire width */
 body {
-display: relative;
-background-size: cover;
-background-position: center;
 background-color: var(--green);
-width: 90%;
-margin: 0 auto;
+width: 100%;
 }
 
-/* Header box CSS properties */
+/* Header box CSS properties-sets height,background green, and text white */
 .header {
-  padding: 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: var(--green);
   color: var(--white);
   height: 80px;
 }
 
-/* h1 "name" CSS properites in header box */ 
+/* h1 tag "Jake Williams" CSS properites in header box */ 
 .header h1 {
   display: inline-block;
   text-align: right;
@@ -41,7 +61,6 @@ margin: 0 auto;
   color: var(--green);
   width: 380px;
   margin-top: 25px;
-  margin-bottom: 0px;
   }
 
   /* Nav bar CSS properties in header box */
@@ -53,14 +72,15 @@ margin: 0 auto;
   font-size: 20px;
 }
 
-/* Links in Nav bar CSS properties */
+/* link-text CSS properties-affects nav bar and contacts at bottom of page */
 a {
   color: var(--white);
   text-decoration: underline;
   margin: auto;
+  font-weight: bold;
 }
 
-/* Background image CSS properties */
+/* Background image 'trees' CSS properties */
 .hero {
   height: 220px;
   width: 100%;
@@ -68,18 +88,12 @@ a {
   background-size: cover;
   background-position: center;
 }
-/* Main content CSS properties */
-.content {
-  width: 100%;
-  display: inline-block;
-  overflow: auto;
-  justify-content: center;
-}
 
-/* "About me" section CSS properties */
+/* "About me" box-section CSS properties */
 .about-me {
+  width: 100%;
+  justify-content: center;
   margin-bottom: 20px;
-  padding: 10px;
   height: 370px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: var(--dark-blue);
@@ -90,18 +104,19 @@ a {
     , #31708e, #687864);
 }
 
-/* Current photo CSS properties in "About me" section */
+/* Current photo CSS properties in "About me" box-section */
 .current-photo {
   float: left;
   margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
   width: 240px;
   height: 360px;
-  border-right-style: inset;
-  border-bottom-style: inset;
-  border-color: var(--light-blue);
+  border-style: solid;
+  border-color: var(--white);
 }
 
-/* My work text-box section CSS properties */
+/* My work text-box section CSS properties-affects "my work & applications" text */
 .my-work {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #ffffff;
@@ -111,72 +126,95 @@ a {
   justify-content: center;
 }
 
-/* Haz materials survey app CSS properties */
+/* This is the project cards container */   
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Haz materials survey app CSS properties-affects the main project card */
 .haz-mat-card {
-  flex: 1 0 100%;
-  padding: 1.5rem;
-  height: 250px;
+  width: 100%;
+  height: 400px;
   color: var(--white);
-  background-image: url("./assets/images/haz-mat-card-photo.jpg");
+  background-image: url("../images/haz-mat-card-photo.jpg");
   background-size: cover;
   background-position: center;
+  margin: 15px;
+  border-style: solid;
+  border-color: var(--light-blue);
+  transition: all 0.5s ease-in-out;
 }
 
-/* Mold inspection report generator CSS properties */
+/* Haz materials card hover-over glow affect CSS properties */
+.haz-mat-card:hover,
+.haz-mat-card:hover .haz-mat-card {
+  box-shadow: inset 0px 0px 8px var(--white), 0 0 15px var(--white);
+}
+
+/* Rowed project cards CSS properties-affects 3 smaller project boxes */
+.microbial-card, .xrf-card, .cloud-card  {
+  color: var(--white);
+  height: 200px;
+  width: 30%;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  border-style: solid;
+  border-color: var(--light-blue);
+  transition: all 0.5s ease-in-out;
+}
+
+/* sets the background image for the microbial project card */
 .microbial-card {
-  color:black;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-  background-image: url("./assets/images/mold-card-photo.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../images/mold-card-photo.jpg"); 
 }
 
-/* XRF analyzer digital scribe log CSS properties */
+/* sets the hover-over glow affect for the microbial project card */
+.microbial-card:hover,
+.microbial-card:hover .microbial-card {
+  box-shadow: inset 0px 0px 8px var(--white), 0 0 15px var(--white);
+}
+
+/* sets the background image for the xrf analyzer project card */
 .xrf-card {
-  color:black;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-  background-image: url("./assets/images/xrf-card-photo.jpg");
-  background-size: cover;
-  background-position: center;
+ background-image: url("../images/xrf-card-photo.jpg");
+} 
+
+/* sets the hover-over glow affect for the xrf analyzer project card */
+.xrf-card:hover,
+.xrf-card:hover .xrf-card {
+  box-shadow: inset 0px 0px 8px var(--white), 0 0 15px var(--white);
 }
 
-
-/* Cloud based storage app CSS properties */
+/* sets the background image for the cloud-storage project card */
 .cloud-card {
-  color: black;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-  background-image: url("./assets/images/cloud-card-photo.jpg");
-  background-size: cover;
-  background-position: center;
+background-image: url("../images/cloud-card-photo.jpg");
+ }
+
+ /* sets the hover-over glow affect for the cloud-storage project card */
+.cloud-card:hover,
+.cloud-card:hover .cloud-card {
+  box-shadow: inset 0px 0px 8px var(--white), 0 0 15px var(--white);
 }
 
-
-
-
-
-
-/* Contact section CSS properties */
+/* Footer section "contact me" CSS properties */
 .contact-me {
-  padding: 30px;
+  width: 100%;
+  height:80px;
+  margin-top: 20px;
+  background-color: var(--green);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
-  
-}
+  line-height: normal;
+  }
 
+/* Footer section "contact me" link text properties */
 .contact-me a {
-  color: var(--green);
+  color: var(--white);
+  font-weight: bold;
+  line-height: 25%;
   display: inline-block;
 }
 
