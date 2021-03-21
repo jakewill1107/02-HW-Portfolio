@@ -4,7 +4,6 @@ This a basic portfolio page for incoming coding boot camp students. It was built
 ## Table of Contents
 * [Description](#Description)
 * [Technologies](#technologies)
-* [Application](#Application)
 * [Demonstration](#demonstration)
 * [Instructions](#instructions)
 * [Acknowledgements](#acknowledgements)
@@ -12,8 +11,6 @@ This a basic portfolio page for incoming coding boot camp students. It was built
 ## Technologies
 * HTML
 * CSS
-## Application 
-![Finished Product](assets\images\jakewill1107.github.io_02-HW-Portfolio_.png)
 ### About Us
 N.A.
 ## Installation
