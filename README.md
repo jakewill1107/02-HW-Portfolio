@@ -13,7 +13,7 @@ This a basic portfolio page for incoming coding boot camp students. It was built
 * HTML
 * CSS
 ## Application 
-![Finished Product](.https://jakewill1107.github.io/02-HW-Portfolio/)
+![Finished Product](assets\images\jakewill1107.github.io_02-HW-Portfolio_.png)
 ### About Us
 N.A.
 ## Installation
