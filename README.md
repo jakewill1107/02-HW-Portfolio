@@ -1,6 +1,6 @@
 # 02-HW-Portfolio
 ## Description 
-This a basic portfolio page for incoming coding boot camp students. It was built from the ground up as a practice method and is the students firs attempt at building a website using html and css.
+This a basic portfolio page for incoming coding boot camp students. It was built from the ground up as a practice method and is the students first attempt at building a website using html and css.
 ## Table of Contents
 * [Description](#Description)
 * [Technologies](#technologies)
