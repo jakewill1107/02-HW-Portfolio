@@ -1,17 +1,29 @@
- /*This is the root color scheme for the page */
+/*This is the root color scheme for the page */
 :root {
   --green: #687864;
   --dark-blue: #31708e;
   --medium-blue: #5085a5;
-  --light-blue: #8fc1e3; 
+  --light-blue: #8fc1e3;
   --white: #f7f9fb;
 }
 
 /* Universal CSS properties-affects all elements on page */
 * {
-margin: 0px;
-padding: 0px;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* h1 tag CSS properties-affects "Jake Williams" text in header box */
+h1 {
+  display: inline-block;
+  text-align: right;
+  font-size: 48px;
+  background-color: var(--white);
+  color: var(--green);
+  width: 380px;
+  margin-top: 25px;
 }
 
 /* h2 tag CSS properties-affects "about me" and "my work and applications" text */
@@ -22,7 +34,7 @@ h2 {
 
 /* h3 tag CSS properties-affects 'haz-mat' title card text */
 h3 {
-  font-size:20px;
+  font-size: 20px;
   font-weight: bold;
   background-color: var(--dark-blue);
   width: fit-content;
@@ -31,7 +43,7 @@ h3 {
 
 /* h4 tag CSS properties-affects title text in rowed project cards */
 h4 {
-  font-size:15px;
+  font-size: 15px;
   font-weight: bold;
   background-color: var(--dark-blue);
   width: fit-content;
@@ -40,35 +52,25 @@ h4 {
 
 /* Body CSS properties-sets background to green and fills the entire width */
 body {
-background-color: var(--green);
-width: 100%;
+  background-color: var(--green);
+  width: 100%;
 }
 
 /* Header box CSS properties-sets height,background green, and text white */
 .header {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   background-color: var(--green);
   color: var(--white);
   height: 80px;
 }
 
-/* h1 tag "Jake Williams" CSS properites in header box */ 
-.header h1 {
-  display: inline-block;
-  text-align: right;
-  font-size: 48px;
-  background-color: var(--white);
-  color: var(--green);
-  width: 380px;
-  margin-top: 25px;
-  }
-
-  /* Nav bar CSS properties in header box */
+/* Nav bar CSS properties in header box */
 .header nav {
   padding-top: 30px;
   margin-right: 20px;
   float: right;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
 }
 
@@ -95,13 +97,11 @@ a {
   justify-content: center;
   margin-bottom: 20px;
   height: 370px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: var(--dark-blue);
   color: var(--white);
   font-size: 16px;
-  background-image: linear-gradient(
-    180deg
-    , #31708e, #687864);
+  background-image: linear-gradient(180deg, #31708e, #687864);
 }
 
 /* Current photo CSS properties in "About me" box-section */
@@ -118,15 +118,15 @@ a {
 
 /* My work text-box section CSS properties-affects "my work & applications" text */
 .my-work {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #ffffff;
-  font-size:30px;
+  font-size: 30px;
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
-/* This is the project cards container */   
+/* This is the project cards container */
 .project-cards {
   display: flex;
   flex-wrap: wrap;
@@ -154,7 +154,9 @@ a {
 }
 
 /* Rowed project cards CSS properties-affects 3 smaller project boxes */
-.microbial-card, .xrf-card, .cloud-card  {
+.microbial-card,
+.xrf-card,
+.cloud-card {
   color: var(--white);
   height: 200px;
   width: 30%;
@@ -168,7 +170,7 @@ a {
 
 /* sets the background image for the microbial project card */
 .microbial-card {
-  background-image: url("../images/mold-card-photo.jpg"); 
+  background-image: url("../images/mold-card-photo.jpg");
 }
 
 /* sets the hover-over glow affect for the microbial project card */
@@ -179,8 +181,8 @@ a {
 
 /* sets the background image for the xrf analyzer project card */
 .xrf-card {
- background-image: url("../images/xrf-card-photo.jpg");
-} 
+  background-image: url("../images/xrf-card-photo.jpg");
+}
 
 /* sets the hover-over glow affect for the xrf analyzer project card */
 .xrf-card:hover,
@@ -190,10 +192,10 @@ a {
 
 /* sets the background image for the cloud-storage project card */
 .cloud-card {
-background-image: url("../images/cloud-card-photo.jpg");
- }
+  background-image: url("../images/cloud-card-photo.jpg");
+}
 
- /* sets the hover-over glow affect for the cloud-storage project card */
+/* sets the hover-over glow affect for the cloud-storage project card */
 .cloud-card:hover,
 .cloud-card:hover .cloud-card {
   box-shadow: inset 0px 0px 8px var(--white), 0 0 15px var(--white);
@@ -202,13 +204,14 @@ background-image: url("../images/cloud-card-photo.jpg");
 /* Footer section "contact me" CSS properties */
 .contact-me {
   width: 100%;
-  height:80px;
+  height: 80px;
   margin-top: 20px;
   background-color: var(--green);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-align: center;
   line-height: normal;
-  }
+}
 
 /* Footer section "contact me" link text properties */
 .contact-me a {
@@ -217,4 +220,3 @@ background-image: url("../images/cloud-card-photo.jpg");
   line-height: 25%;
   display: inline-block;
 }
-
